@@ -1,11 +1,8 @@
 def solve(l):
 	print(sum(l))
 
-t = int(input())
+for _ in range(int(intput())):
 
-for i in range(0, t):
-
-	arr = input() 
-	l = list(map(int, arr.split(' ')))
+	l = list(map(int, input().split(' ')))
 
 	solve(l)
