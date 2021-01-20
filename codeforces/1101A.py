@@ -1,6 +1,9 @@
-for _ in range(int(input())):
+def digsum(x):
+	return sum(map(int,[char for char in x]))
 
-	l,r,d=map(int,input().split())
-
-	print(d) if d<l else print(r-(r%d)+d)
-	
+n=[char for char in input()]
+count=0
+while(len(n)>1): 
+	n=str(digsum(n))
+	count+=1
+print(count)
