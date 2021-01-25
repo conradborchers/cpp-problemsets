@@ -1,0 +1,1 @@
+x=input();print(x + "".join(list(reversed(list(x)))))
